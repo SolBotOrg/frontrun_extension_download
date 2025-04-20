@@ -1,5 +1,76 @@
-<!doctype html>
-<html><meta charset="utf-8"><title>Frontrun extension builds</title>
-<h1>Latest build</h1>
-<p><a href="frontrun-extension-latest.zip">Download ZIP</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontrun Extension Download</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .container {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2563eb;
+      margin-top: 0;
+    }
+    .download-btn {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 20px 0;
+      transition: background-color 0.2s;
+    }
+    .download-btn:hover {
+      background-color: #1d4ed8;
+    }
+    .instructions {
+      background-color: #f0f4ff;
+      border-left: 4px solid #2563eb;
+      padding: 15px;
+      margin: 20px 0;
+    }
+    .build-date {
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Frontrun Extension</h1>
+    
+    <p>This is the latest build of the Frontrun browser extension, automatically deployed from the main branch.</p>
+    
+    <a href="frontrun-extension-latest.zip" class="download-btn">Download Extension ZIP</a>
+    
+    <div class="instructions">
+      <h2>Installation Instructions:</h2>
+      <ol>
+        <li>Download the ZIP file using the button above</li>
+        <li>Unzip the file to extract the extension folder</li>
+        <li>In Chrome, go to <code>chrome://extensions</code></li>
+        <li>Enable "Developer mode" using the toggle in the top-right</li>
+        <li>Click "Load unpacked" and select the extracted extension folder</li>
+        <li>The extension should now be installed and ready to use!</li>
+      </ol>
+    </div>
+    
+    <p class="build-date">Last updated: $(date -u +'%B %d, %Y at %H:%M UTC')</p>
+  </div>
+</body>
 </html>
